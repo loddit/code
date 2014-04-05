@@ -102,6 +102,10 @@ module.exports = function (grunt) {
             coffee: {
                 files: [ 'frontend/js/**/*.coffee' ],
                 tasks: [ 'coffee', 'ozma' ]
+            },
+            template: {
+                files: [ 'frontend/template/**/*.html' ],
+                tasks: [ 'concat', ]
             }
         },
         copy: {
